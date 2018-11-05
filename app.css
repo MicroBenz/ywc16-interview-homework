@@ -1,0 +1,107 @@
+body, .title {
+  text-align: center;
+}
+
+.title {
+  font-size: 3em;
+}
+
+@media(max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+body {
+  margin: 0;
+  background-image: url('./images/bg.jpg');
+}
+
+.subtitle-marquee {
+  background-color: wheat;
+}
+
+.chuck-gif {
+  max-width: 100%;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+
+.rainbow {
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ 
+  /* Chrome, Safari, Opera */
+ -webkit-animation: rainbow 3s infinite; 
+ 
+ /* Internet Explorer */
+ -ms-animation: rainbow 3s infinite;
+ 
+ /* Standar Syntax */
+ animation: rainbow 3s infinite; 
+}
+
+#joke-result {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.be-creative {
+  max-width: 100%;
+}
+
+.get-button {
+  color: red;
+  font-size: 28px;
+  border-radius: 6px;
+}
+
+.result-container {
+  display: flex;
+  background-color: aqua;
+}
+
+@media(max-width: 600px) {
+  .result-container {
+    flex-direction: column;
+  }
+}
+
+.image-col {
+  width: 400px;
+  max-width: 100%;
+}
+
+.joke-result-container {
+  flex: 1;
+}
