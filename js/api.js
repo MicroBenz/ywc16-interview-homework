@@ -1,3 +1,5 @@
+var baseURL = 'https://api.icndb.com/jokes';
+
 function fetchWrapper(method) {
   if (!method) {
     throw new Error('Method Not Found');
@@ -21,7 +23,7 @@ function fetchWrapper(method) {
           return reject(new Error('Fetch Fail: ' + request.status + ' ' + request.statusText));
         }
       }
-      request.open(method, url);
+      request.open(method, baseURL + url);
       request.send();
     });
   }

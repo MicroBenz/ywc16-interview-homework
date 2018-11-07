@@ -1,5 +1,5 @@
 function getRandomJokes() {
-  return api.get('http://api.icndb.com/jokes/random');
+  return api.get('/random');
 }
 
 function getJokeWithName(firstName, lastName) {
@@ -9,5 +9,5 @@ function getJokeWithName(firstName, lastName) {
   if (!lastName) {
     lastName = 'Doe';
   }
-  return api.get('http://api.icndb.com/jokes/random?firstName=' + firstName + '&lastName=' + lastName);
+  return api.get('/random?firstName=' + firstName + '&lastName=' + lastName);
 }
