@@ -16,4 +16,10 @@
 
 - ทำ Website โดยใช้ Vanilla JS ล้วนๆ เท่านั้น
 - Responsive by default โดยการไม่ใช้ CSS Framework ใดๆ และไม่ตกแต่งสไตล์อะไรให้ทั้งนั้น (Feeling Retro)
-- ดึง API จาก Chuck Norris API
+- ดึง API จาก Chuck Norris API http://www.icndb.com/api/
+
+## Credit
+
+- GIF From Giphy
+- Party Parrot from https://cultofthepartyparrot.com/
+
