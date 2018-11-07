@@ -133,3 +133,7 @@ footer > p {
 .red-heart {
   color: red;
 }
+
+video {
+  max-width: 100%;
+}
