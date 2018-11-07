@@ -52,7 +52,7 @@ function getJokeWithName(firstName, lastName) {
   return api.get('/random?firstName=' + firstName + '&lastName=' + lastName);
 }
 
-// That's joke...This is not jQuery
+// This is not jQuery
 window.$ = function(query) {
   var selector = document.querySelector(query);
   if (!selector) {
