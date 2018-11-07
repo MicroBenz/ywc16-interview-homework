@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ชัค นอร์ริส</title>
-  <link rel="stylesheet" href="./app.css">
+  <title>ชัค นอร์ริส เวอร์ชันศูนย์จุดศูนย์จุดหนึ่ง</title>
+  <link rel="stylesheet" href="./css/app.css">
   <link rel="manifest" href="./favicon/manifest.json">
   <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -22,35 +22,38 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
 </head>
 <body>
-  <h1 class="title rainbow">ชัค นอร์ริส เอพีไอ</h1>
-  <marquee class="subtitle-marquee" scrollamount="10">
-    <div class="marquee-inner-container">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <h2 class="subtitle rainbow">หามุกเทพๆ ระดับชัค นอร์ริสได้ เพียงแค่ปลายนิ้ว</h2>
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
-      <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+  <main>
+    <h1 class="title rainbow">ชัค นอร์ริส โจ๊ก</h1>
+    <marquee class="subtitle-marquee" scrollamount="10">
+      <div class="marquee-inner-container">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <h2 class="subtitle rainbow">หามุกเทพๆ ระดับชัค นอร์ริสได้ เพียงแค่ปลายนิ้ว</h2>
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+        <img src="./images/fastparrot.gif" alt="Fast Parrot GIF">
+      </div>
+    </marquee>
+    <video src="./images/chuck-norris-approves.mp4" autoplay loop muted playsinline></video>
+    <br>
+    <div class="result-container">
+      <div class="image-col">
+        <img src="./images/be-creative.jpg" class="be-creative">
+      </div>
+      <div class="joke-result-container">
+        <h2>ชัค นอร์ริส บอกว่าาาาาา</h2>
+        <p id="joke-result">Chuck Norris makes onions cry</p>
+        <button class="get-button" onclick="handleGetRandomJokes()">กดเพื่อหามุข</button>
+      </div>
     </div>
-  </marquee>
-  <img class="chuck-gif" src="./images/chuck-norris-approves.gif" alt="Chuck Norris Approves">
-  <br>
-  <div class="result-container">
-    <div class="image-col">
-      <img src="./images/be-creative.jpg" class="be-creative">
-    </div>
-    <div class="joke-result-container">
-      <h2>ชัค นอร์ริส บอกว่าาาาาา</h2>
-      <p id="joke-result">Chuck Norris makes onions cry</p>
-      <button class="get-button" onclick="handleGetRandomJokes()">กดเพื่อหามุข</button>
-    </div>
-  </div>
-  <script src="./js/api.js"></script>
-  <script src="./js/joke.js"></script>
-  <script src="./js/jquery.js"></script>
+  </main>
+  <footer>
+    <p>สร้างด้วย <span class="red-heart">♥</span> โดย <a href="https://microbenz.github.io/" target="_blank" rel="noopener noreferrer">เบนซ์นะจ๊ะ@YWC#14</a></p>
+  </footer>
+  <script src="./js/lib.js"></script>
   <script src="./js/index.js"></script>
 </body>
 </html>

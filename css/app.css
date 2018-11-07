@@ -14,7 +14,7 @@ body, .title {
 
 body {
   margin: 0;
-  background-image: url('./images/bg.jpg');
+  background-image: url('../images/bg.jpg');
 }
 
 .subtitle-marquee {
@@ -117,4 +117,19 @@ body {
 
 .marquee-inner-container img {
   height: 60px;
+}
+
+main {
+  margin-bottom: 20px;
+}
+footer {
+  background-color: azure;
+  padding: 20px 0;
+}
+
+footer > p {
+  margin: 0;
+}
+.red-heart {
+  color: red;
 }

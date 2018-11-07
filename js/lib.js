@@ -1,3 +1,4 @@
+// API Call Helper
 var baseURL = 'https://api.icndb.com/jokes';
 
 function fetchWrapper(method) {
@@ -34,4 +35,28 @@ var api = {
   post: fetchWrapper('POST'),
   put: fetchWrapper('PUT'),
   delete: fetchWrapper('DELETE'),
+}
+
+// Get Joke Helper
+function getRandomJokes() {
+  return api.get('/random');
+}
+
+function getJokeWithName(firstName, lastName) {
+  if (!firstName) {
+    firstName = 'John';
+  }
+  if (!lastName) {
+    lastName = 'Doe';
+  }
+  return api.get('/random?firstName=' + firstName + '&lastName=' + lastName);
+}
+
+// That's joke...This is not jQuery
+window.$ = function(query) {
+  var selector = document.querySelector(query);
+  if (!selector) {
+    throw new Error('Fail to get Element');
+  }
+  return selector;
 }
